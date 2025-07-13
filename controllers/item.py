@@ -27,3 +27,8 @@ async def update_item(item_id:int, item:ItemCreate, db:Session = Depends(get_db)
 @router.delete("/item/{item_id}")
 async def remove_item(item_id:int, db: Session = Depends(get_db)):
     return ItemService(db).remove_item(item_id)
+
+
+
+
+
